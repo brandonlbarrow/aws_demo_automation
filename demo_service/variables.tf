@@ -21,6 +21,10 @@ variable "private_default_security_group_id" {
   default = "sg-04ff8e734a7685625"
 }
 
+variable "public_default_security_group_id" {
+  default = "sg-0335f9112ddc07c47"
+}
+
 variable "ami_id" {
   default = "ami-0fc61db8544a617ed"
 }

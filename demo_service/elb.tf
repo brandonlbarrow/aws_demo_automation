@@ -3,6 +3,7 @@ resource "aws_lb" "demo-alb" {
   internal = false
   load_balancer_type = "application"
   subnets = var.dmz_subnet_ids
+  security_groups    = [var.public_default_security_group_id]
 }
 
 resource "aws_lb_target_group" "demo-tg" {
